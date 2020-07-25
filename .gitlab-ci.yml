@@ -1,7 +1,12 @@
 image: "node:latest"
+stages:
+ - construir
+ - testar
 
 construir:
- - npm install
+  script:
+   - npm install
 
 testar:
- - npm test
+  script:
+   - npm test
