@@ -5,6 +5,9 @@ stages:
 
 construir:
   stage: construir
+  artifacts:
+    paths:
+      node_modules
   script:
    - npm install
 
