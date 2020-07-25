@@ -3,10 +3,12 @@ stages:
  - construir
  - testar
 
-construir:
+construir-job:
+  stage: construir
   script:
    - npm install
 
 testar:
+  stage: construir
   script:
    - npm test
