@@ -1,21 +1,24 @@
 //bibliotecas utilizadas no projeto 
-var express = require("express");
+const express = require("express");
 const bodyParser = require('body-parser')
 
 //porta utilizada por nossa aplicação
 const port = 3000;
 
+//instância da biblioteca express
 var app = express();
+
+//configuração das respostas como json
 app.use(bodyParser.json());
 
-
-if (require.main === module){
-    //inicia o servidor
+//inicialização da api
+if (require.main === module){    
 	app.listen(port);
 	console.log("API disponível em localhost:3000")    
 }
 
 
+//endpoint /juntar acessível por meio de chamada get
 app.get("/juntar", (req, res, next) => {	
 
 	let p1 = req.query.palavra1;
