@@ -4,6 +4,7 @@ image: "node:latest"
 stages:
  - construir
  - testar
+ - publicar
 
 construir:
   stage: construir
@@ -18,3 +19,9 @@ testar:
   stage: testar
   script:
    - npm test
+
+publicar:
+  stage: publicar
+  script:
+    - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/transfor-digital-modelo-devops.git
+    - git push -f heroku master
