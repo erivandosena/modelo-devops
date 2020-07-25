@@ -4,7 +4,8 @@
   "description": "Projeto de exemplo para o curso de DevOps do programa de transformação digital",
   "main": "index.js",
   "scripts": {
-    "test": "node index.test"
+    "test": "node index.test",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
