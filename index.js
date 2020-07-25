@@ -22,8 +22,7 @@ app.get("/juntar", (req, res, next) => {
 	let p2 = req.query.palavra2;
 	let retorno = {};
 
-	if (p1=='banana'){
-		res.sendStatus=500;
+	if (p1=='banana'){		
 		retorno.resultado = "Não gosto de banana";
 		
 	} else {

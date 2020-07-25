@@ -6,7 +6,7 @@ const app = require('./index')
 //teste do endpoint
 test('GET Sucesso', (t) => {
     supertest(app)
-      .get('/concat?p1=fabio&p2=barbosa')      
+      .get('/juntar?palavra1=fabio&palavra2=barbosa')      
       .expect(200)
       .end((err, res) =>{
         t.error(err, 'Sem erros')
@@ -15,3 +15,13 @@ test('GET Sucesso', (t) => {
       })
 })
 
+test('GET Tratamento palavra indesejada', (t) => {
+    supertest(app)
+      .get('/juntar?palavra1=banana&palavra2=barbosa')      
+      .expect(200)
+      .end((err, res) =>{
+        t.error(err, 'Sem erros')
+        t.assert(res.body.resultado === 'Não gosto de banana', "ok")
+        t.end()  
+      })
+})
