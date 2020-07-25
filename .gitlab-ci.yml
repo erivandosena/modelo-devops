@@ -9,8 +9,8 @@ construir:
    - npm install
   artifacts:
     paths:
-      - node_modules/
-      
+      - node_modules/*
+
 testar:
   stage: testar
   script:
