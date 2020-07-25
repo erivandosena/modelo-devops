@@ -1,10 +1,5 @@
 image: "node:latest"
 
-cache:
-  untracked: true
-  key: "$CI_BUILD_REF_NAME"
-  paths:
-    - node_modules/
 
 stages:
  - construir
@@ -14,7 +9,11 @@ construir:
   stage: construir
   script:
    - npm install
-  
+  artifacts:
+    paths:
+      - node_modules/
+  expire_in: 1 week
+
 testar:
   stage: testar
   script:
