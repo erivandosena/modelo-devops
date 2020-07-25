@@ -5,12 +5,12 @@ stages:
 
 construir:
   stage: construir
-  artifacts:
-    paths:
-      - node_modules
   script:
    - npm install
-
+  artifacts:
+    paths:
+      - node_modules/
+      
 testar:
   stage: testar
   script:
