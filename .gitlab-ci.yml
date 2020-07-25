@@ -1,0 +1,7 @@
+image: "node:latest"
+
+construir:
+ - npm install
+
+testar:
+ - npm test
