@@ -1,0 +1,22 @@
+{
+  "name": "transfor-digital-modelo-devops",
+  "version": "1.0.0",
+  "description": "Projeto de exemplo para o curso de DevOps do programa de transformação digital",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/fabio.barbosa/transfor-digital-modelo-devops.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/fabio.barbosa/transfor-digital-modelo-devops/issues"
+  },
+  "homepage": "https://gitlab.com/fabio.barbosa/transfor-digital-modelo-devops#README",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
