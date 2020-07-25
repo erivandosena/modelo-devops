@@ -17,6 +17,8 @@
   },
   "homepage": "https://gitlab.com/fabio.barbosa/transfor-digital-modelo-devops#README",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "supertest": "^4.0.2",
+    "tape": "^5.0.1"
   }
 }
