@@ -3,7 +3,8 @@ const express = require("express");
 const bodyParser = require('body-parser')
 
 //porta utilizada por nossa aplicação
-const port = 3000;
+let port = process.env.PORT || 3000;
+
 
 //instância da biblioteca express
 var app = express();
