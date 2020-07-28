@@ -1,6 +1,5 @@
 image: "node:latest"
 
-
 stages:
  - construir
  - testar
